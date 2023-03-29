@@ -1,6 +1,6 @@
 const express = require('express')
 // const listen = require('./Server/startServer')
-const siteRouter = require('./site/siteController') 
+const siteRouter = require('./Site/siteController') 
 const app = express()
 
 app.use('/site', siteRouter)
