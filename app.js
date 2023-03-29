@@ -5,10 +5,6 @@ const app = express()
 
 app.use('/site', siteRouter)
 
-app.get('/app', (req, res)=>{
-    res.send('WebSite in development!')
-})
-
 app.listen(3000, (err)=>{
     if(err){
         console.log('Error:', err)
