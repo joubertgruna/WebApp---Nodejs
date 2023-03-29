@@ -1,11 +1,7 @@
 const express = require('express')
-const app = express()
+const app = express.Router()
 
-app.get('/', (req, res)=>{
-    res.end('Ty!')
-})
-
-const listen = app.listen(3000, (err)=>{
+app.listen(3000, (err)=>{
     if(err){
         console.log('Error:', err)
     }else{
@@ -13,4 +9,4 @@ const listen = app.listen(3000, (err)=>{
     }
 })
 
-module.exports = listen
+module.exports = app
